@@ -127,7 +127,7 @@ retentionai-frontend/
 
 1. **Cloner le repository**
 ```bash
-git clone https://github.com/votre-org/retentionai-frontend.git
+git clone [https://github.com/votre-org/retentionai-frontend.git](https://github.com/SaidaAourras/retentionai-frontend.git)
 cd retentionai-frontend
 ```
 
