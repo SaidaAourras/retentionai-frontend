@@ -6,7 +6,7 @@ import {
   TrendingUp, LogOut, Loader
 } from 'lucide-react';
 
-/* ================== LABELS ================== */
+
 const fieldLabels = {
   Age: "Âge",
   BusinessTravel: "Voyages",
@@ -32,7 +32,7 @@ const fieldLabels = {
   YearsWithCurrManager: "Années Manager"
 };
 
-/* ================== ENC0DAGES NUMÉRIQUES ================== */
+
 const numericCategoricalOptions = {
   Education: [
     { label: "Below College", value: 1 },
@@ -79,7 +79,7 @@ const numericCategoricalOptions = {
   ],
 };
 
-/* ================== AUTRES CATÉGORIES ================== */
+
 function getOptions(key) {
   const opts = {
     Gender: ["Male", "Female"],
@@ -97,7 +97,7 @@ function getOptions(key) {
   return opts[key] || [];
 }
 
-/* ================== PAGE ================== */
+
 export default function RetentionAnalysisPage() {
   const router = useRouter();
   const [isPredicting, setIsPredicting] = useState(false);
@@ -106,7 +106,7 @@ export default function RetentionAnalysisPage() {
   const [error, setError] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  /* ================== FORM DATA ================== */
+ 
   const [formData, setFormData] = useState({
     Age: "35",
     BusinessTravel: "Travel_Rarely",
@@ -143,7 +143,7 @@ export default function RetentionAnalysisPage() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  /* ================== PREDICTION ================== */
+
   const handlePredict = async () => {
     setIsPredicting(true);
     setError(null);
@@ -208,7 +208,6 @@ export default function RetentionAnalysisPage() {
     );
   }
 
-  /* ================== UI ================== */
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 to-blue-950 text-slate-100 p-6">
       <div className="max-w-7xl mx-auto space-y-8">
